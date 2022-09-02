@@ -1,40 +1,64 @@
-import _ from "lodash";
 import "./assets/css/styles.css";
+import { Shirt, Shoes } from "./clothes";
+
+let KillianShirt = new Shirt("blue", "XXL", "Nike", "shirt");
+let KillianShoes = new Shoes("white", "34", "Abibas", "shoes");
+KillianShirt.FindCategory();
+let aze = 0;
+
+let solde = 5;
+solde <= -100 ? console.log("true") : console.log("false");
+
+console.log(KillianShirt, KillianShoes);
 //button
 const ButtonDeposit = document.getElementById("ButtonDeposit");
 const ButtonWithdraw = document.getElementById("buttonWithdraw");
 //button
 
 //Ajout/retrait argent
-const addMoney = document.getElementById("Deposit");
+const Deposit = document.getElementById("Deposit");
 const WithdrawMoney = document.getElementById("Withdraw");
+const result = document.getElementById("result");
 //Ajout/retrait argent
 
+
+
 //algo
-const Zero = addMoney > 0;
-let totalBalance = 25;
+let amount = Deposit;
+let startingMoney = 25;
+let sold = 0;
 //algo
 
-//Si on met 0 alors sa marche pas
-Zero.prototype.User = function (addMoney) {
-  console.log("zae");
-  if (!Zero) {
-    console.error("Amount must be positive!");
-    return false;
-  }
-  return true;
-};
+// const add = (value) => {
+//   return (sold += value);
+// };
+// console.log(add(5));
+// console.log(sold);
+
+// console.log(add(5));
+// console.log(sold);
+
+// let a = 50;
+// let b = 56;
+// Math.random(a, b);
+
+// function PutMoney() {
+//   //Deposit.startingMoney = Deposit.startingMoney + amount;
+//   Deposit.value;
+
+//   //if (a < b) {
+//   alert("test");
+// }
 
 //button click
 ButtonDeposit.addEventListener("click", () => {
-  console.log(User);
+  console.log(test);
 });
 
 let user = {
   numberAccount: 12548545,
   iban: "FR76584755",
   codeBank: 454578,
-  addMoney: 1,
 };
 
 class User {
@@ -42,7 +66,7 @@ class User {
     numberAccount,
     iban,
     codeBank,
-    addMoney,
+    Deposit,
     withdrawMoney,
     giveMoney,
     balanceManagement,
@@ -52,7 +76,7 @@ class User {
     this.numberAccount = numberAccount;
     this.iban = iban;
     this.codeBank = codeBank;
-    this.addMoney = addMoney;
+    this.Deposit = Deposit;
     this.withdrawMoney = withdrawMoney;
     this.giveMoney = giveMoney;
     this.balanceManagement = balanceManagement;
@@ -62,81 +86,5 @@ class User {
 }
 
 let ruben = new User(12548545, "FR76584755", 454578, 25);
+let safwan = new User(12548545, "FR76584755", 454578, 25);
 
-// Fontawesome @import
-// import '@fortawesome/fontawesome-free/js/all';
-// //  Tailwind @import
-//   import "./assets/css/styles.css";
-
-// // const btn = document.getElementById("dark-mode");
-// // const body = document.querySelector("body");
-// // const title = document.querySelectorAll("h1");
-
-// // const darkMode = () => {
-// //     body.classList.toggle("bg-black");
-// //     body.classList.toggle("text-white");
-// //     title.forEach((value) => {
-// //         value.classList.toggle("bg-red-500")
-// //     })
-// // };
-
-// // btn.addEventListener("click", darkMode);
-
-// import Computer from './computer';
-
-// let hatim = new Computer("ssd", "Rtx3090", "intel 7");
-// let warren = new Computer("hdd", "lorem", "amd 5");
-
-// console.log(hatim);
-// console.log(warren);
-
-// const btn = document.getElementById("submit");
-// const hardDisk = document.getElementById("hard-disk");
-// const gpu = document.getElementById("gpu");
-// const cpu = document.getElementById("cpu");
-// const category = document.getElementById("category");
-
-// const resultsHdd = document.getElementById("results-hdd");
-// const resultsgpu = document.getElementById("results-gpu");
-// const resultscpu = document.getElementById("results-cpu");
-// const resultsCategory = document.getElementById("results-category");
-
-// const submitForm = () => {
-//     let computer = new Computer(hardDisk.value, gpu.value, cpu.value, category.value);
-//     resultsHdd.append(computer.hardDisk);
-//     resultsgpu.append(computer.gpu);
-//     resultscpu.append(computer.cpu);
-//     resultsCategory.append(computer.category);
-//     console.log(computer);
-// }
-// btn.addEventListener("click", submitForm);
-
-// let a = new Computer("hdd", "rtc", "intel", "keybo");
-// console.log(a);
-// class AccessoryPc {
-//     constructor(category) {
-//         this.category = category;
-//     };
-
-//     keyboard(value) {
-//         value = this.category;
-//         try {
-//             if(value === "keyboard") {
-//                 return "je suis un clavier.";
-//             } else {
-//                 return "keyboard error";
-//             }
-//         } catch (error) {
-//             console.error(error);
-//         }
-//     };
-// }
-
-// class Computer extends AccessoryPc {
-//     constructor(hardDisk, gpu, cpu, category) {
-//         super(category);
-//         this.hardDisk = hardDisk;
-//         this.gpu = gpu;
-//         this.cpu = cpu;
-//     };
-// };
