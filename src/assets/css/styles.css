@@ -17,3 +17,11 @@
 .red {
   background-color: rgb(8, 49, 136);
 }
+
+.w {
+  width: 50rem; /* 384px */
+}
+
+.h {
+  height: 50rem; /* 384px */
+}
