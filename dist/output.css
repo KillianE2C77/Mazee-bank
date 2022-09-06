@@ -555,28 +555,12 @@ video {
   display: flex;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
 .justify-center {
   justify-content: center;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
 .justify-around {
   justify-content: space-around;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 @font-face {

@@ -53,7 +53,15 @@ let ruben = new User(12548545, "FR76584755", 454578, 25, 0, 0, 0, 0, 100);
 
 //button click
 ButtonDeposit.addEventListener("click", () => {
+  // console.log((ruben.initialSold += ruben.Deposit));
   console.log((ruben.initialSold += ruben.Deposit));
+
+      if (ruben.initialSold > 0) {
+        const totalBalanceAmount =
+          balanceShowTotalValue + depositInputFieldValue;
+        balanceShow.innerText = totalBalanceAmount;
+      }
+
   // console.log(user);
   // deposits.push(Number(Deposit.value));
   // initialSold += Number(Deposit.value);
