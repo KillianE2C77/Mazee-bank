@@ -1,14 +1,14 @@
 
 
 //visuel
-// Des identifiants
+// Des identifiants fait
 
-// Formulaires, input, boutton envoyé
+// Formulaires, input, boutton envoyé fait
 
 //algo
-// récuperer boutton submit
-// récuperer la valeur input
-// créer une variable qui va stocker notre solde
+// récuperer boutton submit fait
+// récuperer la valeur input fait
+// créer une variable qui va stocker notre solde fait
 // créer une fonction quand on click sur le boutton envoyé récup les champs
 // innerhtml
 // boutton ajouter de l'argent, et retirer de l'argent
@@ -16,3 +16,6 @@
 // a découvert
 // pouvoir envoyé de l'argent à un bénéficiaire
 
+
+gfd Y
+ ezeaeaeazeaeaeea ezaeaz

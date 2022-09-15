@@ -1,22 +1,29 @@
-import FindClothes from "./findClothes";
+// import FindClothes from "./findClothes";
 
-export class Shirt extends FindClothes {
-  constructor(colors, size, mark, category) {
-    super(category);
-    this.colors = colors;
-    this.size = size;
-    this.mark = mark;
-  }
-  FindCategory() {
-    return `${super.SearchCategory()}`;
-  }
-}
+// export class Shirt extends FindClothes {
+//   constructor(colors, size, mark, category) {
+//     super(category);
+//     this.colors = colors;
+//     this.size = size;
+//     this.mark = mark;
+//   }
+//   FindCategory() {
+//     return `${super.SearchCategory()}`;
+//   }
+// }
 
-export class Shoes extends FindClothes {
-  constructor(colors, size, mark, category) {
-    super(category);
-    this.colors = colors;
-    this.size = size;
-    this.mark = mark;
-  }
-}
+// export class Shoes extends FindClothes {
+//   constructor(colors, size, mark, category) {
+//     super(category);
+//     this.colors = colors;
+//     this.size = size;
+//     this.mark = mark;
+//   }
+// } eee 
+// tctc
+// dsqdYYY zeaeze 
+
+// sf eaeaz jsuxqs
+
+
+ ezaeea eze
