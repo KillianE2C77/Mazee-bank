@@ -7,20 +7,47 @@
     <title>Document</title>
     <link href="/output.css" rel="stylesheet" />
   <script defer src="/assets/runtime.bundle.js"></script><script defer src="/assets/main.bundle.js"></script></head>
-  <body class="red w h">
+  <body class="bg-blue-700 w h">
+    <h4 class="text-4xl">$<span id="currentSoldTotal">00</span></h4>
+
     <div class="flex justify-center">
-      <p>Votre argent :<span id="initialSold"></span></p>
+      <p>Votre argent :<span id="currentSold"></span></p>
     </div>
-    <div class="flex flex-col items-center justify-center">
-      <input type="number" id="input-deposit" />
-      <button id="add-sold">lazdl</button>
-      <input type="number" id="withdrawMoney" />
-      <button id="submit-add">ldl</button>
-    </div>
-    <div class="flex justify-around">
-      <!-- <button id="ButtonDeposit">Deposer</button>
+    <div>
+      <img class="w-full px-4" src="./assets/img/bank.jpg" alt="" />
+
+      <div class="flex flex-col items-center justify-center p-8 rounded">
+        <input
+          type="number"
+          id="input-deposit"
+          class="rounded"
+          placeholder="Déposer votre argent"
+        />
+        <button id="add-sold" class="bg-purple-800 px-3 py-2 text-white">
+          Ajouter
+        </button>
+        <!-- <input type="number" id="withdrawMoney" />
+      <button id="submit-add">Retirer</button> -->
+        <input
+          type="number"
+          id="input-withdrawsold"
+          class="rounded"
+          placeholder="Retirer votre argent"
+        />
+        <button id="withdraw-sold" class="bg-purple-800 px-3 py-2 text-white">
+          Retirer
+        </button>
+
+        <!-- </div> -->
+        <!-- <div class="flex justify-around">
+      <button id="ButtonDeposit">Deposer</button>
       <button id="ButtonDeposit">Retirer</button> -->
-    </div>
+        <!-- <button id="ButtonDeposit">Deposer</button>
+      <button id="ButtonDeposit">Retirer</button> -->
+
+        <!-- </div> -->
+      </div>
     </div>
   </body>
 </html>
+

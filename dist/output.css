@@ -555,6 +555,10 @@ video {
   display: flex;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -569,6 +573,49 @@ video {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.bg-blue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.bg-purple-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 33 168 / var(--tw-bg-opacity));
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @font-face {
@@ -598,4 +645,14 @@ video {
 .h {
   height: 50rem;
   /* 384px */
+}
+
+.body {
+  background-image: linear-gradient(
+      0deg,
+      rgba(29, 34, 40, 0.65),
+      rgba(29, 34, 40, 0.65)
+    ),
+    url(..//img/bank.jpg);
+  min-height: 525px;
 }
