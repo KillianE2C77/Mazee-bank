@@ -19,19 +19,37 @@
 }
 
 .w {
-  width: 50rem; /* 384px */
+  width: 30rem; /* 384px */
 }
 
 .h {
-  height: 50rem; /* 384px */
+  height: 30rem; /* 384px */
 }
 
-.body {
+.black {
+  background-color: #202020;
+}
+
+.grey {
+  background-color: #2d2d2d;
+}
+
+.k {
   background-image: linear-gradient(
       0deg,
       rgba(29, 34, 40, 0.65),
       rgba(29, 34, 40, 0.65)
     ),
-    url(..//img/bank.jpg);
+    url("..//img/bank.jpg");
+  min-height: 525px;
+}
+
+.money {
+  background-image: linear-gradient(
+      0deg,
+      rgba(29, 34, 40, 0.65),
+      rgba(29, 34, 40, 0.65)
+    ),
+    url("..//img/money.jpg");
   min-height: 525px;
 }

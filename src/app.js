@@ -3,13 +3,6 @@ import "./assets/css/styles.css";
 //ajouter argent
 // const button = document.getElementById("submit-add");
 const inputDeposit = document.getElementById("input-deposit");
-inputDeposit.addEventListener("keydown", (key) => {
-  // console.log(key.code);
-  // if (key.code === "Enter") {
-  //   alert("a");
-  // }
-  key.code === "Enter" ? alert("a") : "";
-});
 const buttonAddSold = document.getElementById("add-sold");
 const inputAddSold = document.getElementById("input-addsold");
 
@@ -24,7 +17,9 @@ console.log(inputAddSold);
 let currentSold = 100;
 
 // const balanceShowTotal = balanceShow.innerText;
-const currentSoldTotal = currentSold.innerText;
+const currentSoldTotal = document.getElementById("currentSoldTotal");
+currentSoldTotal.innerHTML = `${currentSold}`;
+
 console.log(currentSoldTotal);
 
 class User {
@@ -72,6 +67,7 @@ const withdraw = () => {
   // let results = (parse += currentSold);
   if (currentSold >= -1 && currentSold < 0) {
     console.log("A Découvert");
+    alert("Vous êtes a découvert");
   } else if (currentSold >= 0 && currentSold <= -1) {
     console.log((currentSold -= results));
   } else {
