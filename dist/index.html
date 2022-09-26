@@ -7,38 +7,147 @@
     <title>Document</title>
     <link href="/output.css" rel="stylesheet" />
   <script defer src="/assets/runtime.bundle.js"></script><script defer src="/assets/main.bundle.js"></script></head>
-  <body class="black w h">
-    <h4 class="text-4xl text-green-700">
-      <span id="currentSoldTotal">$00</span>
-    </h4>
-    <p class="text-green-700">Votre argent :<span id="currentSold"></span></p>
+  <body class="bggg w-full h-screen flex justify-center flex-col items-center">
+    <div class="grey2 w2 h2">
+      <div class="flex flex-col items-center justify-center p-8 rounded">
+        <!-- Côté titre -->
 
-    <!-- <div class="flex justify-center">
-      <p>Votre argent :<span id="currentSold"></span></p>
-    </div> -->
-    <div class="k w-screen">
-      <div class="flex justify-center w-4/4">
-        <div class="flex flex-col items-center justify-center p-8 rounded">
-          <input
-            type="number"
-            id="input-deposit"
-            class="rounded"
-            placeholder="Déposer votre argent"
-          />
-          <button id="add-sold" class="bg-green-700 px-3 py-2 text-white">
-            Ajouter
-          </button>
-          <input
-            type="number"
-            id="input-withdrawsold"
-            class="rounded"
-            placeholder="Retirer votre argent"
-          />
-          <button id="withdraw-sold" class="bg-green-700 px-3 py-2 text-white">
-            Retirer
-          </button>
+        <div class="flex justify-start flex-col items-start uppercase w-full">
+          <div class="grid grid-cols-2">
+            <div class="flex justify-center flex-col item-center ml-28">
+              <img class="w-28 h-28" src="./assets/img/banklogo.png" alt="a" />
+              <h4 class="font-bold text-6xl">Maze Bank</h4>
+              <h2 class="font-medium text-xl">Of Los Santos</h2>
+            </div>
+            <div class="grid grid-cols-1">
+              <div class="flex justify-end self-end">
+                <p class="text-green-700">
+                  Votre argent :<span id="currentSold"></span>
+                </p>
+                <h4 class="text-4xl text-green-700">
+                  <span class="font-small" id="currentSoldTotal">$00</span>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="redhr" width="100%" />
+
+    <div class="grid grid-cols-1"> 
+        <div class="flex justify-end items-center h-32">
+
+          <div class="grad w3 h3">
+            <h1 class="font-bold text-medium">Nom d'utilisateur</h1>
+            <h1 class="font-medium">Choisir un service</h1>
+          </div>
+        </div>
+        </div>
+
+        <!-- Côté argent -->
+
+        <div class="grid grid-cols-2">
+          <div class="flex justify-center flex-col item-center ml-28">
+              <input
+                type="number"
+                id="input-deposit"
+                class="rounded"
+                placeholder="Déposer votre argent"
+              />
+              <button id="add-sold" class="bg-green-700 px-3 py-2 text-white">
+                Ajouter
+              </button>
+              <input
+                type="number"
+                id="input-withdrawsold"
+                class="rounded"
+                placeholder="Retirer votre argent"
+              />
+              <button
+                id="withdraw-sold"
+                class="bg-green-700 px-3 py-2 text-white"
+              >
+                Retirer
+              </button>
+
+              <input
+                type="number"
+                id="input-withdrawsold"
+                class="rounded"
+                placeholder="Transferer votre argent"
+              />
+
+              <button
+                id="withdraw-sold"
+                class="bg-red-800 px-3 py-2 text-white"
+              >
+                Transferer
+              </button>
+            </div>
+
+            <div class="flex ml-28">
+              <div class="grad flex flex-col items-center">
+                <h1 class="font-medium text-xl">Ajouter un bénéficiaire</h1>
+                <input
+                  type="number"
+                  id="input-withdrawsold"
+                  class="rounded"
+                  placeholder="test"
+                />
+                <button
+                  id="add-sold"
+                  class="pink hover:grad active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 px-3 py-2 text-white"
+                >
+                  Ajouter
+                </button>
+
+                <h2 class="font-medium text-xl">Choisir un bénéficiaire</h2>
+                <select id="utilisateur-selection">
+                  <option value="">--choisir une option--</option>
+                  <option value="test">test</option>
+                </select>
+
+                <button
+                  id="add-sold"
+                  class="pink hover:bg-red-500 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 px-3 py-2 text-white"
+                >
+                  Confirmer
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <footer class="grid grid-cols-3 grad w-full mt-auto">
+        <div class="flex justify-center items-center font-normal">
+          <span class="text-white">Liens Utiles</span>
+        </div>
+        <div class="flex justify-center items-center font-normal">
+          <span class="text-white">Maze Bank - Copyright © 2022</span>
+        </div>
+
+        <div class="flex justify-center items-center font-normal">
+          <span class="text-white">Tout droits réservés</span>
+        </div>
+
+                <div class="flex justify-center">
+          <span>
+            <a href="#" target="_blank" rel="noreferrer noopener" class="text-white decoration-none">
+              <i class="fa-solid fa-link"></i>
+            </a>
+          </span>
+          <span class="px-4">
+            <a href="#" target="_blank" rel="noreferrer noopener" class="text-white decoration-none">
+              <i class="fa-brands fa-github"></i>
+            </a> 
+          </span>
+          <span>
+            <a href="#" target="_blank" rel="noreferrer noopener" class="text-white decoration-none">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </span>
+        </div>
+               
+      </footer>
     </div>
   </body>
 </html>

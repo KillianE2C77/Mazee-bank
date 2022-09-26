@@ -1,4 +1,5 @@
 import "./assets/css/styles.css";
+import "@fortawesome/fontawesome-free/js/all";
 
 //ajouter argent
 // const button = document.getElementById("submit-add");
@@ -23,23 +24,7 @@ currentSoldTotal.innerHTML = `${currentSold}`;
 console.log(currentSoldTotal);
 
 class User {
-  constructor(
-    numberAccount,
-    iban,
-    codeBank,
-    Deposit,
-    withdrawMoney,
-    giveMoney,
-    balanceManagement,
-    authorizedOverdraft,
-    initialSold
-  ) {
-    this.numberAccount = numberAccount;
-    this.iban = iban;
-    this.codeBank = codeBank;
-    this.Deposit = Deposit;
-    this.withdrawMoney = withdrawMoney;
-    this.giveMoney = giveMoney;
+  constructor(balanceManagement, authorizedOverdraft, initialSold) {
     this.balanceManagement = balanceManagement;
     this.authorizedOverdraft = authorizedOverdraft;
     this.initialSold = initialSold;
