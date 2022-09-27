@@ -7,25 +7,25 @@
     <title>Document</title>
     <link href="/output.css" rel="stylesheet" />
   <script defer src="/assets/runtime.bundle.js"></script><script defer src="/assets/main.bundle.js"></script></head>
-  <body class="bggg w-full h-screen flex justify-center flex-col items-center">
-    <div class="grey2 w2 h2">
-      <div class="flex flex-col items-center justify-center p-8 rounded">
+  <body class="w-full h-screen flex justify-center flex-col items-center bggg lg:w-full lg:h-screen lg:flex lg:justify-center lg:flex-col lg:items-center">
+    <div class="grey2">
+      <div class="flex flex-col items-center justify-center p-8 rounded lg:flex lg:flex-col lg:items-center lg:justify-center lg:p-8 lg:rounded">
         <!-- Côté titre -->
 
-        <div class="flex justify-start flex-col items-start uppercase w-full">
-          <div class="grid grid-cols-2">
-            <div class="flex justify-center flex-col item-center ml-28">
-              <img class="w-28 h-28" src="./assets/img/banklogo.png" alt="a" />
-              <h4 class="font-bold text-6xl">Maze Bank</h4>
-              <h2 class="font-medium text-xl">Of Los Santos</h2>
+        <div class="flex justify-start flex-col items-start uppercase lg:flex lg:justify-start lg:flex-col lg:items-start lg:uppercase">
+          <div class="grid grid-cols-2 lg:grid lg:grid-cols-2">
+            <div class="flex justify-center flex-col items-center ml-28 lg:flex lg:justify-center lg:flex-col lg:item-center lg:ml-28">
+              <img class="w-28 h-28 lg:w-28 lg:h-28" src="./assets/img/banklogo.png" alt="a" />
+              <h4 class="font-bold text-6xl lg:font-bold lg:text-6xl ">Maze Bank</h4>
+              <h2 class="font-medium text-xl lg:font-medium lg:text-xl">Of Los Santos</h2>
             </div>
-            <div class="grid grid-cols-1">
-              <div class="flex justify-end self-end">
-                <p class="text-green-700">
-                  Votre argent :<span id="currentSold"></span>
+            <div class="grid grid-cols-1 lg:grid lg:grid-cols-1">
+              <div class="flex flex-col justify-end self-end pl-96 lg:flex lg:flex-col lg:justify-end lg:self-end lg:pl-96">
+                <p class="text-green-700 lg:text-green-700">
+                  Votre argent :<span id="currentSold"> $</span>
                 </p>
-                <h4 class="text-4xl text-green-700">
-                  <span class="font-small" id="currentSoldTotal">$00</span>
+                <h4 class="text-4xl text-green-700 lg:text-4xl lg:text-green-700">
+                  <span class="font-small lg:font-small" id="currentSoldTotal">$00</span>
                 </h4>
               </div>
             </div>
@@ -33,38 +33,39 @@
         </div>
         <hr class="redhr" width="100%" />
 
-    <div class="grid grid-cols-1"> 
-        <div class="flex justify-end items-center h-32">
+    <div class="grid grid-cols-1 lg:grid lg:grid-cols-1"> 
+        <div class="flex justify-end items-center h-32 lg:flex lg:justify-end lg:items-center">
 
           <div class="grad w3 h3">
-            <h1 class="font-bold text-medium">Nom d'utilisateur</h1>
-            <h1 class="font-medium">Choisir un service</h1>
+            <h1 class="text-white font-bold text-medium lg:text-white lg:font-bold lg:text-medium">Nom d'utilisateur</h1>
+            <h1 class="text-white font-medium pl-450 lg:text-white lg:font-medium lg:pl-450">Choisir un service</h1>
           </div>
         </div>
         </div>
 
         <!-- Côté argent -->
 
-        <div class="grid grid-cols-2">
-          <div class="flex justify-center flex-col item-center ml-28">
+        <div class="grid grid-cols-2 lg:grid lg:grid-cols-2">
+          <div class="flex justify-center flex-col items-center ml-28 lg:flex lg:justify-center lg:flex-col lg:item-center lg:ml-28 grad">
+            <div class="pl-12 flex flex-col lg:pl-12 lg:flex lg:flex-col">
               <input
                 type="number"
                 id="input-deposit"
-                class="rounded"
+                class="rounded lg:rounded"
                 placeholder="Déposer votre argent"
               />
-              <button id="add-sold" class="bg-green-700 px-3 py-2 text-white">
+              <button id="add-sold" class="bg-green-700 px-3 py-2 text-white lg:bg-green-700 lg:px-3 lg:py-2 lg:text-white">
                 Ajouter
               </button>
               <input
                 type="number"
                 id="input-withdrawsold"
-                class="rounded"
+                class="rounded lg:rounded"
                 placeholder="Retirer votre argent"
               />
               <button
                 id="withdraw-sold"
-                class="bg-green-700 px-3 py-2 text-white"
+                class="bg-green-700 px-3 py-2 text-white lg:bg-green-700 lg:px-3 lg:py-2 lg:text-white"
               >
                 Retirer
               </button>
@@ -72,35 +73,36 @@
               <input
                 type="number"
                 id="input-withdrawsold"
-                class="rounded"
+                class="rounded lg:rounded"
                 placeholder="Transferer votre argent"
               />
 
               <button
                 id="withdraw-sold"
-                class="bg-red-800 px-3 py-2 text-white"
+                class="bg-red-800 px-3 py-2 text-white lg:bg-red-800 lg:px-3 lg:py-2 lg:text-white"
               >
                 Transferer
               </button>
             </div>
+            </div>
 
-            <div class="flex ml-28">
-              <div class="grad flex flex-col items-center">
-                <h1 class="font-medium text-xl">Ajouter un bénéficiaire</h1>
+            <div class="lg:flex lg:ml-28">
+              <div class="flex flex-col items-center w-80 h-64 p-4 grad lg:flex lg:flex-col lg:items-center lg:w-80 lg:h-64 lg:p-4">
+                <h1 class="lg:font-medium lg:text-xl">Ajouter un bénéficiaire</h1>
                 <input
                   type="number"
                   id="input-withdrawsold"
-                  class="rounded"
+                  class="rounded lg:rounded"
                   placeholder="test"
                 />
                 <button
                   id="add-sold"
-                  class="pink hover:grad active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 px-3 py-2 text-white"
+                  class="ping hover:grad active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 px-3 py-2 text-white w-80 h-34 lg:pink lg:hover:grad active:lg:bg-violet-700 lg:focus:outline-none lg:focus:ring lg:focus:ring-violet-300 lg:px-3 lg:py-2 lg:text-white lg:w-80 lg:h-34"
                 >
                   Ajouter
                 </button>
 
-                <h2 class="font-medium text-xl">Choisir un bénéficiaire</h2>
+                <h2 class="lg:font-medium lg:text-xl lg:p-8">Choisir un bénéficiaire</h2>
                 <select id="utilisateur-selection">
                   <option value="">--choisir une option--</option>
                   <option value="test">test</option>
@@ -108,7 +110,7 @@
 
                 <button
                   id="add-sold"
-                  class="pink hover:bg-red-500 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 px-3 py-2 text-white"
+                  class="pink bg-red-500 bg-violet-700 lg:pink hover:lg:bg-red-500 lg:active:bg-violet-700 lg:focus:outline-none lg:focus:ring lg:focus:ring-violet-300 lg:px-3 lg:py-2 lg:text-white lg:w-80 lg:h-34"
                 >
                   Confirmer
                 </button>
@@ -117,31 +119,31 @@
           </div>
         </div>
       </div>
-      <footer class="grid grid-cols-3 grad w-full mt-auto">
-        <div class="flex justify-center items-center font-normal">
-          <span class="text-white">Liens Utiles</span>
+      <footer class="grid grid-cols-3 w-full mt-auto lg:grid lg:grid-cols-3 grad lg:w-full lg:mt-auto">
+        <div class="flex justify-center items-center font-normal lg:flex lg:justify-center lg:items-center lg:font-normal">
+          <span class="lg:text-white">Liens Utiles</span>
         </div>
-        <div class="flex justify-center items-center font-normal">
-          <span class="text-white">Maze Bank - Copyright © 2022</span>
-        </div>
-
-        <div class="flex justify-center items-center font-normal">
-          <span class="text-white">Tout droits réservés</span>
+        <div class="flex justify-center items-center font-normal lg:flex lg:justify-center lg:items-center lg:font-normal">
+          <span class="lg:text-white">Maze Bank - Copyright © 2022</span>
         </div>
 
-                <div class="flex justify-center">
+        <div class="flex justify-center ites-center font-normal lg:flex lg:justify-center lg:items-center lg:font-normal">
+          <span class="lg:text-white">Tout droits réservés</span>
+        </div>
+
+                <div class="flex justify-center lg:flex lg:justify-center">
           <span>
-            <a href="#" target="_blank" rel="noreferrer noopener" class="text-white decoration-none">
+            <a href="#" target="_blank" rel="noreferrer noopener" class="text-white decoration-non lg:text-white lg:decoration-none">
               <i class="fa-solid fa-link"></i>
             </a>
           </span>
-          <span class="px-4">
-            <a href="#" target="_blank" rel="noreferrer noopener" class="text-white decoration-none">
+          <span class="lg:px-4">
+            <a href="#" target="_blank" rel="noreferrer noopener" class="text-white decoration-none lg:text-white lg:decoration-none">
               <i class="fa-brands fa-github"></i>
             </a> 
           </span>
           <span>
-            <a href="#" target="_blank" rel="noreferrer noopener" class="text-white decoration-none">
+            <a href="#" target="_blank" rel="noreferrer noopener" class="text-white decoration-none lg:text-white lg:decoration-none">
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </span>
