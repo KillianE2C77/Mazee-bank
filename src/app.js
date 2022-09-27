@@ -12,6 +12,9 @@ const inputWithdraw = document.getElementById("input-withdraw");
 const buttonWithdrawSold = document.getElementById("withdraw-sold");
 const inputWithdrawSold = document.getElementById("input-withdrawsold");
 
+const inputTransfer = ducment.getElementById("input-transfer");
+const inputTransfertest = document.getElementById("input-transfer");
+
 console.log(inputWithdraw);
 //algo
 console.log(inputAddSold);
@@ -44,7 +47,7 @@ const addSold = () => {
   // return console.log((results += currentSold));
 };
 
-// // Algo retirer argent
+//Algo retirer argent
 const withdraw = () => {
   let results = parseInt(inputWithdrawSold.value);
   console.log(results);
@@ -59,6 +62,14 @@ const withdraw = () => {
     console.log("error");
   }
 };
+
+//Algo Transfer argent
+
+// function sendMoneyToUser(){
+//     if (currentSold > -1) {
+//        alert("Fond insuffisant.")
+//     }
+//  else {
 
 console.log(currentSold);
 
