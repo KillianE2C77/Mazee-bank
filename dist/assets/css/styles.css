@@ -14,10 +14,6 @@
   background: linear-gradient(0deg, rgba(222, 39, 46, 1) 0%);
 }
 
-.red {
-  background-color: rgb(8, 49, 136);
-}
-
 .pl-450 {
   padding-left: 450px;
 }
@@ -65,7 +61,6 @@
 .redhr {
   border-color: #f01824;
 }
-
 
 .bggg {
   background-image: linear-gradient(
