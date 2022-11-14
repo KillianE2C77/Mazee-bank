@@ -12,7 +12,7 @@ const inputWithdraw = document.getElementById("input-withdraw");
 const buttonWithdrawSold = document.getElementById("withdraw-sold");
 const inputWithdrawSold = document.getElementById("input-withdrawsold");
 
-const inputTransfer = ducment.getElementById("input-transfer");
+const inputTransfer = document.getElementById("input-transfer");
 const inputTransfertest = document.getElementById("input-transfer");
 
 console.log(inputWithdraw);
